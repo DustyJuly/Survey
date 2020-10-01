@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<img src="img/bg.jpg" alt="Background" style="width:100%;">
+		<div class="content">
+	<div class="header">
+		<h1 id="title">BooCosmetics Survey Form</h1>
+		<p id="description">Thanks for your inspiration!</p>
+	</div>
+	<form action="" id="survey-form">
+		<div class="form-block"><label class="main-dscr" for="name" id="name-label">Your name:</label><br>
+		<input type="text" name="name" id="name" placeholder="enter your name" required></div>
+		<div class="form-block"><label class="main-dscr" for="email" id="email-label">Your email:</label><br>
+		<input type="email" name="email" id="email" placeholder="enter your email" required></div>
+		<div class="form-block"><label class="main-dscr"for="number" id="number-label">Your current age:</label><br>
+		<input type="number" name="age" id="number" placeholder="age" min="1" max="120"></div>
+		
+		<div class="form-block"><p class="main-dscr">Please choose type of your skin:</p>
+		<select name="skintype" id="dropdown">
+			<option value="normal" selected>normal</option>
+  			<option value="dry">dry</option>
+			<option value="oily">oily</option>
+			<option value="combination">combination</option>
+		</select></div>
+		
+		<div class="form-block"><p class="main-dscr">Please choose the user of our cosmetics:</p>
+		<input type="radio" id="male" name="gender" value="male">
+  		<label class="form-text" for="male">Male</label><br>
+  		<input type="radio" id="female" name="gender" value="female">
+  		<label class="form-text" for="female">Female</label><br>
+  		<input type="radio" id="kid" name="gender" value="kid">
+  		<label class="form-text" for="other">Kid under 14years</label></div>
+		
+		<div class="form-block"><p class="main-dscr">Please choose which product you have tried:</p>
+		<input type="checkbox" id="product1" name="product1" value="Soap">
+  		<label class="form-text" for="product1">Soap</label><br>
+  		<input type="checkbox" id="product2" name="product2" value="LipBalm">
+  		<label class="form-text" for="vproduct2">Lip Balm</label><br>
+  		<input type="checkbox" id="product3" name="product3" value="BathSalt">
+  		<label class="form-text" for="product3">Bath Salt</label><br></div>
+
+  		<div class="form-block"><textarea name="comments" id="comments-textarea" cols="50" rows="10" placeholder="please write your comments and suggestions for our improvement"></textarea></div>
+
+  		<div class="form-block"><button type="submit" id="submit">Submit</button></div>
+	</form>
+	<footer>Created by DustyJuly</footer>
+	</div>
+	</div>
+</body>
+</html>
